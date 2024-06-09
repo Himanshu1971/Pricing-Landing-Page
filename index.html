@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Choose your plan</h2>
+    <div class="currency-selector">
+      <label for="currency">Select Currency:</label>
+      <select id="currency">
+        <option value="USD" data-rate="1">USD</option>
+        <option value="EUR" data-rate="0.85">EUR</option>
+        <option value="GBP" data-rate="0.75">GBP</option>
+      </select>
+    </div>
+    <div class="pricing-row">
+      <div class="pricing-col" data-usd="9.99">
+        <p>Basic</p>
+        <h3 class="price">9.99 <span>$/month</span></h3>
+        <ul class="plan-features">
+          <li>10GB Storage</li>
+          <li>1 User</li>
+          <li>Support</li>
+          <li>Free Email Address</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+      <div class="pricing-col" data-usd="19.99">
+        <p>Standard</p>
+        <h3 class="price">19.99 <span>$/month</span></h3>
+        <ul class="plan-features">
+          <li>50GB Storage</li>
+          <li>10 User</li>
+          <li>Support</li>
+          <li>Free Email Address</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+      <div class="pricing-col" data-usd="49.99">
+        <p>Premium</p>
+        <h3 class="price">49.99 <span>$/month</span></h3>
+        <ul class="plan-features">
+          <li>100GB Storage</li>
+          <li>20 User</li>
+          <li>Support</li>
+          <li>Free Email Address</li>
+        </ul>
+        <button>Add To Cart</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

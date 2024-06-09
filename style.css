@@ -1,0 +1,127 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #5c539d;
+}
+
+.container h2 {
+    color: #fff;
+    font-size: 32px;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.currency-selector {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.currency-selector label {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+}
+
+.currency-selector select {
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    background-color: #1f283b;
+    color: #fff;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.currency-selector select:focus {
+    outline: none;
+    border-color: #e33058;
+}
+
+.pricing-row {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.pricing-col {
+    background-color: #1f283b;
+    padding: 10% 15%;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+    transition: 0.5s;
+}
+
+.pricing-col p {
+    font-size: 22px;
+}
+
+.pricing-col h3 {
+    font-size: 44px;
+    margin: 20px 0 40px;
+    font-weight: 500;
+}
+
+.pricing-col h3 span {
+    font-size: 16px;
+}
+
+.pricing-col ul {
+    text-align: left;
+    margin: 20px 0;
+    color: #ddd;
+    list-style: none;
+}
+
+.pricing-col ul li {
+    margin: 15px 0;
+}
+
+.pricing-col ul li::before {
+    content: '\2022';
+    color: #e33058;
+    font-weight: bold;
+    margin: 8px;
+}
+
+.pricing-col button {
+    width: 100%;
+    padding: 14px 0;
+    background: transparent;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #e33058;
+    border-radius: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.pricing-col:hover {
+    box-shadow: 10px 10px 10px black;
+}
+
+.pricing-col button:hover {
+    background-color: #e33058;
+}
+
+@media (max-width: 1200px) {
+    .pricing-row {
+        grid-template-columns: 1fr;
+        width: 100%;
+    }
+
+    .pricing-col {
+        margin-bottom: 20px;
+    }
+}
